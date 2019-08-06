@@ -18,6 +18,6 @@ class Queue
 
     private
 
-    attr_reader :underlying_array
+    attr_reader :queue
 
 end
