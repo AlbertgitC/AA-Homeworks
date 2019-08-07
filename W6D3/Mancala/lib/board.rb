@@ -78,8 +78,17 @@ class Board
   end
 
   def one_side_empty?
+    self.cups[0..5].all?([]) || self.cups[7..12].all?([])
   end
 
   def winner
+    case self.cups[13].length <=> self.cups[6].length
+    when -1
+      return self.player1
+    when 0
+      return :draw
+    when 1
+      return self.player2
+    end
   end
 end

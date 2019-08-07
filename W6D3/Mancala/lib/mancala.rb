@@ -62,3 +62,8 @@ class Mancala
     puts " 1   2   3   4   5   6"
   end
 end
+
+
+
+game = Mancala.new("Albert", "P2")
+game.play
